@@ -29,7 +29,6 @@ static void child(cmds_t *list, char ***env)
         exit_error(NULL, NULL, "execve");
     } else
         list->pid = pid;
-    dprintf(2, "pid of \"%s\" is %d\n", list->cmd, list->pid);
 }
 
 static void exec_rec(cmds_t *list, char ***env)
